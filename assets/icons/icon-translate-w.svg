@@ -1,0 +1,10 @@
+<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="icon-translate-w">
+<mask id="mask0_25_132" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="24" height="24">
+<rect id="Bounding box" width="24" height="24" fill="#D9D9D9"/>
+</mask>
+<g mask="url(#mask0_25_132)">
+<path id="translate" d="M11.9 21L16.45 9H18.55L23.1 21H21L19.925 17.95H15.075L14 21H11.9ZM4 18L2.6 16.6L7.65 11.55C7.06667 10.9667 6.5375 10.3 6.0625 9.55C5.5875 8.8 5.15 7.95 4.75 7H6.85C7.18333 7.65 7.51667 8.21667 7.85 8.7C8.18333 9.18333 8.58333 9.66667 9.05 10.15C9.6 9.6 10.1708 8.82917 10.7625 7.8375C11.3542 6.84583 11.8 5.9 12.1 5H1V3H8V1H10V3H17V5H14.1C13.75 6.2 13.225 7.43333 12.525 8.7C11.825 9.96667 11.1333 10.9333 10.45 11.6L12.85 14.05L12.1 16.1L9.05 12.975L4 18ZM15.7 16.2H19.3L17.5 11.1L15.7 16.2Z" fill="white"/>
+</g>
+</g>
+</svg>
