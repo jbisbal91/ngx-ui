@@ -44,9 +44,12 @@ const components = [
       provide: HIGHLIGHT_OPTIONS,
       useValue: {
         coreLibraryLoader: () => import('highlight.js/lib/core'),
-        lineNumbers: true,
-        languages: getHighlightLanguages(),
-      } as HighlightOptions,
+        languages: {
+          xml: () => import('highlight.js/lib/languages/xml'),
+          typescript: () => import('highlight.js/lib/languages/typescript'),
+          scss: () => import('highlight.js/lib/languages/scss'),
+        },
+      },
     },
   ],
 })
