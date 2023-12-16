@@ -1,0 +1,39 @@
+<nav class="justify-between">
+  <ul class="flex items-center list-none gap-10">
+    <li (click)="navigateByUrl('home')">
+      <img class="logo" draggable="false" src="assets/images/logo.png" />
+    </li>
+    <li (click)="navigateByUrl('designs')">Designs</li>
+    <li (click)="navigateByUrl('components')">Components</li>
+    <li (click)="navigateByUrl('templates')">Templates</li>
+  </ul>
+
+  <ul class="flex items-center list-none gap-10">
+    <li class="flex items-center cursor-pointer">
+      <img
+        class=""
+        draggable="false"
+        src="assets/icons/icon-light-mode.svg"
+        alt="icon-light-mode"
+      />
+    </li>
+
+    <li class="cursor-pointer">
+      <img
+        class=""
+        draggable="false"
+        src="assets/icons/icon-translate-w.svg"
+        alt="icon-translate"
+      />
+    </li>
+    <li class="flex items-center gap-2">
+      <img
+        class=""
+        draggable="false"
+        src="assets/icons/icon-github-w.svg"
+        alt="icon-github"
+      />
+      GitHub
+    </li>
+  </ul>
+</nav>

@@ -1,0 +1,12 @@
+<div class="c-nav">
+  <ul class="list-none">
+    <li
+      routerLink="{{ route.path }}"
+      class="flex items-center"
+      [class.selected]="checkActivatedRoute(route.path)"
+      *ngFor="let route of routes"
+    >
+      {{ route.title }}
+    </li>
+  </ul>
+</div>

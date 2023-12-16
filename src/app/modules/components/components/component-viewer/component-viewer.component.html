@@ -1,0 +1,56 @@
+<div class="demo-viewer-wrapper">
+  <!--Demo example-->
+  <div class="demo-viewer-body">
+    <ng-content select="[demo-viewer-example]"></ng-content>
+  </div>
+
+  <!--Demo title-->
+  <div class="demo-viewer-title">
+    <ng-content select="[demo-viewer-title]"></ng-content>
+  </div>
+
+  <!--Demo Description-->
+  <div class="demo-viewer-description">
+    <div class="demo-viewer-title">
+      <ng-content select="[demo-viewer-title]"></ng-content>
+    </div>
+    <ng-content select="[demo-viewer-description]"></ng-content>
+  </div>
+
+  <!--Demo toolbar-->
+  <div class="demo-viewer-toolbar">
+    <!--Code action-->
+    <div class="toolbar-action" (click)="toggleSourceViewer()">
+      <img alt="Code" src="assets/images/docs/html-coding.png" />
+    </div>
+    <!--Copy action-->
+    <div class="toolbar-action" (click)="copyToClipboard()">
+      <img
+        class="small-image"
+        alt="Copy"
+        src="assets/images/docs/clipboard.png"
+      />
+    </div>
+  </div>
+
+  <!--Source Viewer-->
+  <div
+    [class.visible]="viewerSourceState"
+    *ngIf="tabs"
+    class="demo-viewer-source"
+  >
+    <!--Tabs-->
+    <div
+      class="doc-tab"
+      *ngFor="let tab of tabs; index as i"
+      [class.doc-tab-active]="i === selectedTab"
+      (click)="selectTab(i)"
+    >
+      <div>{{ tab.tabTitle }}</div>
+    </div>
+    <!--Selected Tab Content-->
+    <div class="selected-tab-content">
+      <pre><code [highlight]="selectedTabContent | async"></code></pre>
+    </div>
+  </div>
+</div>

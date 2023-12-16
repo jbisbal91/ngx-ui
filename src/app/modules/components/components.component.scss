@@ -1,0 +1,25 @@
+nav {
+  height: 4rem;
+  width: 100%;
+  background-color: #2b2b2b;
+  display: flex;
+  align-items: center;
+  border-top: 1px solid #5f6368;
+}
+
+ul {
+  padding-inline-start: 2.25rem;
+  padding-inline-end: 2.25rem;
+}
+
+li {
+  color: rgb(232, 234, 237);
+  font-weight: 500;
+  cursor: pointer;
+}
+
+section {
+  overflow: scroll;
+  height: calc(100vh - 4rem);
+  width: 100%;
+}

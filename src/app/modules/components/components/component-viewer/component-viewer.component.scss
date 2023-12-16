@@ -1,0 +1,101 @@
+.selected-tab-content {
+    padding: 20px;
+  }
+  
+  .selected-tab-content pre {
+    margin-bottom: 0 !important;
+  }
+  
+  .doc-tab {
+    display: inline-block;
+    text-align: center;
+    font-size: 14px;
+    padding: 8px 24px;
+    user-select: none;
+    font-weight: bold;
+    color: #314659;
+  }
+  
+  .visible {
+    display: block !important;
+  }
+
+  .doc-tab:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    color: #3F51B5;
+    border-bottom: 3px solid #3F51B5;
+  }
+  
+  .doc-tab-active {
+    border-bottom: 3px solid #3F51B5;
+    color: #3F51B5;
+  }
+  
+  .demo-viewer-source {
+    display: none;
+  }
+  
+  .demo-viewer-wrapper {
+    border: 1px solid #3F51B5;
+    box-shadow: 0 0 2px rgba(0, 0, 0, .24), 0 0 2px rgba(0, 0, 0, .12);
+    min-width: 300px;
+    max-width: 100%;
+    margin-bottom: 25px;
+  }
+  
+  .demo-viewer-body {
+    padding: 30px;
+    overflow: auto;
+    border-bottom: 1px solid rgba(0, 0, 0, .12);
+  }
+  
+  .demo-viewer-title {
+    color: rgb(232, 234, 237);
+    font-weight: 600;
+    font-size: 14px;
+    padding: 10px 0 0 10px;
+  }
+  
+  .demo-viewer-description {
+    padding: 0 10px 15px;
+    color: rgb(232, 234, 237);
+    font-size: 14px;
+    line-height: 2;
+  }
+  
+  .title-spacer {
+    flex: 1 1 auto;
+  }
+  
+  .demo-viewer-toolbar {
+    padding: 8px 20px;
+    background: #BABFDD;
+    display: flex;
+    align-items: center;
+  }
+  
+  .toolbar-action {
+    user-select: none;
+    width: 40px;
+    height: 25px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .toolbar-action img {
+    width: 25px;
+  }
+  
+  .small-image {
+    width: 15px !important;
+  }
+  
+  .toolbar-action:hover {
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.1);
+  }

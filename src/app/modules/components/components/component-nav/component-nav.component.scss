@@ -1,0 +1,27 @@
+.c-nav {
+  height: calc(100vh - 4rem);
+  width: 15.625rem;
+  background-color: #2b2b2b;
+  border-top: 1px solid #5f6368;
+  overflow: scroll;
+}
+
+ul {
+  padding-inline-start: 0;
+  padding-inline-end: 0;
+}
+
+li {
+  height: 3rem;
+  padding-left: 1rem;
+  color: rgb(232, 234, 237);
+}
+
+li:hover {
+  background-color: #343739;
+  cursor: pointer;
+}
+
+.selected {
+  background-color: #4b737b;
+}
