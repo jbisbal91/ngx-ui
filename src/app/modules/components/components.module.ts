@@ -18,6 +18,9 @@ import { ButtonDemo1Component } from './components/demos/button/button-demo1/but
 import { ButtonDemo2Component } from './components/demos/button/button-demo2/button-demo2.component';
 import { ButtonDemo3Component } from './components/demos/button/button-demo3/button-demo3.component';
 import { ButtonDemo4Component } from './components/demos/button/button-demo4/button-demo4.component';
+import { DividerDocsComponent } from './components/docs/divider-docs/divider-docs.component';
+import { DividerDemo1Component } from './components/demos/divider/divider-demo1/divider-demo1.component';
+
 
 export function getHighlightLanguages() {
   return {
@@ -39,6 +42,8 @@ const components = [
   ButtonDemo2Component,
   ButtonDemo3Component,
   ButtonDemo4Component,
+  DividerDocsComponent,
+  DividerDemo1Component
 ];
 
 @NgModule({

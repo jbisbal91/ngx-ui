@@ -4,7 +4,9 @@ import { RouterModule, Routes } from '@angular/router';
 import { ComponentsComponent } from './components.component';
 import { GuidesComponent } from './components/guides/guides.component';
 import { ButtonDocsComponent } from './components/docs/button-docs/button-docs.component';
+import { DividerDocsComponent } from './components/docs/divider-docs/divider-docs.component';
 import { AccordionDocsComponent } from './components/docs/accordion-docs/accordion-docs.component';
+
 
 const routes: Routes = [
   {
@@ -13,6 +15,7 @@ const routes: Routes = [
     children: [
       { path: 'guides', component: GuidesComponent },
       { path: 'button', component: ButtonDocsComponent },
+      { path: 'divider', component: DividerDocsComponent },
       { path: 'expansion', component: AccordionDocsComponent },
       { path: '**', redirectTo: 'guides', pathMatch: 'full' },
     ],
