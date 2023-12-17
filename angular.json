@@ -30,7 +30,8 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.scss"
+              "src/styles.scss",
+              "node_modules/ngx-ui-components/src/lib/assets/styles/main.scss"
             ],
             "scripts": []
           },
