@@ -13,7 +13,7 @@
     padding: 8px 24px;
     user-select: none;
     font-weight: bold;
-    color: #314659;
+    color: rgb(232, 234, 237);
   }
   
   .visible {
@@ -23,13 +23,13 @@
   .doc-tab:hover {
     background-color: rgba(0, 0, 0, 0.1);
     cursor: pointer;
-    color: #3F51B5;
-    border-bottom: 3px solid #3F51B5;
+    color: rgb(232, 234, 237);
+    border-bottom: 3px solid #5f6368;
   }
   
   .doc-tab-active {
-    border-bottom: 3px solid #3F51B5;
-    color: #3F51B5;
+    border-bottom: 3px solid #5f6368;
+    color: rgb(232, 234, 237);
   }
   
   .demo-viewer-source {
@@ -37,7 +37,7 @@
   }
   
   .demo-viewer-wrapper {
-    border: 1px solid #3F51B5;
+    border: 1px solid #5f6368;
     box-shadow: 0 0 2px rgba(0, 0, 0, .24), 0 0 2px rgba(0, 0, 0, .12);
     min-width: 300px;
     max-width: 100%;
@@ -47,7 +47,7 @@
   .demo-viewer-body {
     padding: 30px;
     overflow: auto;
-    border-bottom: 1px solid rgba(0, 0, 0, .12);
+    border-bottom: 1px solid #5f6368;
   }
   
   .demo-viewer-title {
@@ -70,7 +70,7 @@
   
   .demo-viewer-toolbar {
     padding: 8px 20px;
-    background: #BABFDD;
+    background: #5f6368;
     display: flex;
     align-items: center;
   }
