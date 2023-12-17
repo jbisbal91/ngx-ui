@@ -21,6 +21,7 @@
     "@angular/router": "^16.2.0",
     "angular-cli-ghpages": "^1.0.7",
     "ngx-highlightjs": "^10.0.0",
+    "ngx-ui-components": "github:jbisbal91/ngx-ui-lib",
     "rxjs": "~7.8.0",
     "tslib": "^2.3.0",
     "zone.js": "~0.13.0"

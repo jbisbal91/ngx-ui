@@ -13,6 +13,8 @@ import { ComponentViewerComponent } from './components/component-viewer/componen
 import { AccordionDocsComponent } from './components/docs/accordion-docs/accordion-docs.component';
 import { AccordionDemo1Component } from './components/demos/accordion/accordion-demo1/accordion-demo1.component';
 import { HttpClientModule } from '@angular/common/http';
+import { ExpansionPanelModule } from 'ngx-ui-components';
+import { GuidesComponent } from './components/guides/guides.component';
 
 export function getHighlightLanguages() {
   return {
@@ -26,8 +28,9 @@ const components = [
   ComponentsComponent,
   ComponentNavComponent,
   ComponentViewerComponent,
+  GuidesComponent,
   AccordionDocsComponent,
-  AccordionDemo1Component,
+  AccordionDemo1Component
 ];
 
 @NgModule({
@@ -38,6 +41,7 @@ const components = [
     HttpClientModule,
     ComponentsRoutingModule,
     HighlightModule,
+    ExpansionPanelModule
   ],
   providers: [
     {
