@@ -5,7 +5,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { HighlightModule, HIGHLIGHT_OPTIONS } from 'ngx-highlightjs';
 
 import { ComponentsRoutingModule } from './components-routing.module';
-import { ButtonModule, DividerModule, ExpansionPanelModule } from 'ngx-ui-components';
+import { ButtonModule, DividerModule, ExpansionPanelModule, TabModule } from 'ngx-ui-components';
 
 import { ComponentsComponent } from './components.component';
 import { ComponentNavComponent } from './components/component-nav/component-nav.component';
@@ -20,6 +20,8 @@ import { ButtonDemo3Component } from './components/demos/button/button-demo3/but
 import { ButtonDemo4Component } from './components/demos/button/button-demo4/button-demo4.component';
 import { DividerDocsComponent } from './components/docs/divider-docs/divider-docs.component';
 import { DividerDemo1Component } from './components/demos/divider/divider-demo1/divider-demo1.component';
+import { TabDocsComponent } from './components/docs/tab-docs/tab-docs.component';
+import { TabDemo1Component } from './components/demos/tabs-demos/tab-demo1/tab-demo1.component';
 
 
 export function getHighlightLanguages() {
@@ -43,7 +45,9 @@ const components = [
   ButtonDemo3Component,
   ButtonDemo4Component,
   DividerDocsComponent,
-  DividerDemo1Component
+  DividerDemo1Component,
+  TabDocsComponent,
+  TabDemo1Component
 ];
 
 @NgModule({
@@ -57,6 +61,7 @@ const components = [
     ButtonModule,
     ExpansionPanelModule,
     DividerModule,
+    TabModule
   ],
   providers: [
     {
