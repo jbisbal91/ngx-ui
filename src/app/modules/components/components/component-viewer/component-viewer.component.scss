@@ -77,8 +77,8 @@
   
   .toolbar-action {
     user-select: none;
-    width: 40px;
-    height: 25px;
+    width: 2.5rem;
+    height: 1.5rem;
     align-items: center;
     justify-content: center;
     text-align: center;
@@ -88,7 +88,8 @@
   }
   
   .toolbar-action img {
-    width: 25px;
+    width: 1.5rem;
+    filter: invert(95%) sepia(8%) saturate(67%) hue-rotate(177deg) brightness(97%) contrast(96%);
   }
   
   .small-image {
