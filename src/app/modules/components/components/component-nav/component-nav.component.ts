@@ -21,7 +21,7 @@ export class ComponentNavComponent {
     { path: '/components/autocomplete', title: 'Autocomplete' },
     { path: '/components/badge', title: 'Badge' },
     { path: '/components/bottom-sheet', title: 'Bottom Sheet' },
-    { path: '/components/buttons', title: 'Button' },
+    { path: '/components/button', title: 'Button' },
     { path: '/components/button-toggle', title: 'Button toggle' },
     { path: '/components/card', title: 'Card' },
     { path: '/components/checkbox', title: 'Checkbox' },

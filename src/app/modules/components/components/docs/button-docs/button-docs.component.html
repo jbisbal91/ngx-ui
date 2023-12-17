@@ -1,0 +1,56 @@
+<article class="main-article-template">
+  <!---------BREADCRUMBS---------->
+
+  <div class="mb-4">
+    <a class="font-extrabold" routerLink="/components">Components</a>
+    <a routerLink="/components/expansion"> / Button</a>
+  </div>
+
+  <!---------OVERVIEW---------->
+  <h1 class="mb-4">Button Overview</h1>
+
+  <!---------BASIC USAGE---------->
+  <h1 class="mb-4">Basic Usage</h1>
+
+  <!---------DEMO VIEWER---------->
+  <!---------Basic demo----------->
+  <app-component-viewer [tabs]="variation1DemoTabs">
+    <div demo-viewer-example>
+      <app-button-demo1></app-button-demo1>
+    </div>
+    <div demo-viewer-title>Variation 1</div>
+    <div demo-viewer-description>
+      <p>Variation 1.</p>
+    </div>
+  </app-component-viewer>
+
+  <app-component-viewer [tabs]="variation2DemoTabs">
+    <div demo-viewer-example>
+      <app-button-demo2></app-button-demo2>
+    </div>
+    <div demo-viewer-title>Variation 2</div>
+    <div demo-viewer-description>
+      <p>Variation 2.</p>
+    </div>
+  </app-component-viewer>
+
+  <app-component-viewer [tabs]="variation3DemoTabs">
+    <div demo-viewer-example>
+      <app-button-demo3></app-button-demo3>
+    </div>
+    <div demo-viewer-title>Variation 3</div>
+    <div demo-viewer-description>
+      <p>Variation 3.</p>
+    </div>
+  </app-component-viewer>
+
+  <app-component-viewer [tabs]="variation4DemoTabs">
+    <div demo-viewer-example>
+      <app-button-demo4></app-button-demo4>
+    </div>
+    <div demo-viewer-title>Variation 4</div>
+    <div demo-viewer-description>
+      <p>Variation 4.</p>
+    </div>
+  </app-component-viewer>
+</article>

@@ -1,20 +1,23 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import {
-  HighlightModule,
-  HIGHLIGHT_OPTIONS,
-  HighlightOptions,
-} from 'ngx-highlightjs';
+import { HttpClientModule } from '@angular/common/http';
+
+import { HighlightModule, HIGHLIGHT_OPTIONS } from 'ngx-highlightjs';
+
+import { ComponentsRoutingModule } from './components-routing.module';
+import { ButtonModule, DividerModule, ExpansionPanelModule } from 'ngx-ui-components';
 
 import { ComponentsComponent } from './components.component';
-import { ComponentsRoutingModule } from './components-routing.module';
 import { ComponentNavComponent } from './components/component-nav/component-nav.component';
 import { ComponentViewerComponent } from './components/component-viewer/component-viewer.component';
+import { GuidesComponent } from './components/guides/guides.component';
 import { AccordionDocsComponent } from './components/docs/accordion-docs/accordion-docs.component';
 import { AccordionDemo1Component } from './components/demos/accordion/accordion-demo1/accordion-demo1.component';
-import { HttpClientModule } from '@angular/common/http';
-import { ExpansionPanelModule } from 'ngx-ui-components';
-import { GuidesComponent } from './components/guides/guides.component';
+import { ButtonDocsComponent } from './components/docs/button-docs/button-docs.component';
+import { ButtonDemo1Component } from './components/demos/button/button-demo1/button-demo1.component';
+import { ButtonDemo2Component } from './components/demos/button/button-demo2/button-demo2.component';
+import { ButtonDemo3Component } from './components/demos/button/button-demo3/button-demo3.component';
+import { ButtonDemo4Component } from './components/demos/button/button-demo4/button-demo4.component';
 
 export function getHighlightLanguages() {
   return {
@@ -30,7 +33,12 @@ const components = [
   ComponentViewerComponent,
   GuidesComponent,
   AccordionDocsComponent,
-  AccordionDemo1Component
+  AccordionDemo1Component,
+  ButtonDocsComponent,
+  ButtonDemo1Component,
+  ButtonDemo2Component,
+  ButtonDemo3Component,
+  ButtonDemo4Component,
 ];
 
 @NgModule({
@@ -39,9 +47,11 @@ const components = [
   imports: [
     CommonModule,
     HttpClientModule,
-    ComponentsRoutingModule,
     HighlightModule,
-    ExpansionPanelModule
+    ComponentsRoutingModule,
+    ButtonModule,
+    ExpansionPanelModule,
+    DividerModule,
   ],
   providers: [
     {
