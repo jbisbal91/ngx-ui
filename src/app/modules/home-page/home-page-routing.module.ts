@@ -5,15 +5,13 @@ import { HomePageComponent } from './home-page.component';
 const routes: Routes = [
   {
     path: '',
-    component:HomePageComponent,
-    children: [     
-      { path: '**', redirectTo: '', pathMatch: 'full' },
-    ]
-  }
+    component: HomePageComponent,
+    children: [{ path: '**', redirectTo: '', pathMatch: 'full' }],
+  },
 ];
 
 @NgModule({
   imports: [RouterModule.forChild(routes)],
-  exports: [RouterModule]
+  exports: [RouterModule],
 })
-export class HomePageRoutingModule { }
+export class HomePageRoutingModule {}
