@@ -46,6 +46,8 @@ OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 ngx-highlightjs
 MIT
 
+ngx-ui-components
+
 rxjs
 Apache-2.0
                                Apache License
