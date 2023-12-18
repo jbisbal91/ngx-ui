@@ -7,7 +7,6 @@
   }
   
   .doc-tab {
-    transition: all ease-in-out 400ms;
     color: var(--ngx-theme-color-cv-doc-tab);
     display: inline-block;
     text-align: center;
@@ -67,7 +66,6 @@
   
   .demo-viewer-toolbar {
     padding: 8px 20px;
-    transition: all ease-in-out 400ms;
     background: var(--ngx-theme-bg-dvt);
     display: flex;
     align-items: center;
@@ -87,11 +85,11 @@
   
   .toolbar-action img {
     width: 1.5rem;
-    filter: invert(95%) sepia(8%) saturate(67%) hue-rotate(177deg) brightness(97%) contrast(96%);
+    filter: var(--ngx-theme-filter-cviewer)
   }
   
   .small-image {
-    width: 15px !important;
+    width: 1rem !important;
   }
   
   .toolbar-action:hover {
