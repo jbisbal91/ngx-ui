@@ -7,13 +7,14 @@
   }
   
   .doc-tab {
+    transition: all ease-in-out 400ms;
+    color: var(--ngx-theme-color-cv-doc-tab);
     display: inline-block;
     text-align: center;
     font-size: 14px;
     padding: 8px 24px;
     user-select: none;
     font-weight: bold;
-    color: rgb(232, 234, 237);
   }
   
   .visible {
@@ -23,13 +24,11 @@
   .doc-tab:hover {
     background-color: rgba(0, 0, 0, 0.1);
     cursor: pointer;
-    color: rgb(232, 234, 237);
-    border-bottom: 3px solid #5f6368;
+    border-bottom: var(--ngx-theme-cv-doc-tab-border-bottom-3);
   }
   
   .doc-tab-active {
-    border-bottom: 3px solid #5f6368;
-    color: rgb(232, 234, 237);
+    border-bottom: var(--ngx-theme-cv-doc-tab-border-bottom-3);
   }
   
   .demo-viewer-source {
@@ -51,7 +50,6 @@
   }
   
   .demo-viewer-title {
-    color: rgb(232, 234, 237);
     font-weight: 600;
     font-size: 14px;
     padding: 10px 0 0 10px;
@@ -59,7 +57,6 @@
   
   .demo-viewer-description {
     padding: 0 10px 15px;
-    color: rgb(232, 234, 237);
     font-size: 14px;
     line-height: 2;
   }
@@ -70,7 +67,8 @@
   
   .demo-viewer-toolbar {
     padding: 8px 20px;
-    background: #2B2B2B;
+    transition: all ease-in-out 400ms;
+    background: var(--ngx-theme-bg-dvt);
     display: flex;
     align-items: center;
   }

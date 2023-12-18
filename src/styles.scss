@@ -1,4 +1,6 @@
 @import "./assets/styles/main.scss";
+@import "./assets/theme/dark.scss";
+@import "./assets/theme/light.scss";
 
 html,
 body {
@@ -16,8 +18,9 @@ body {
 body {
   font-family: "Roboto", sans-serif;
   margin: 0;
-  background-color: #1e1e1e;
-  color: rgb(232, 234, 237);
+  transition: all ease-in-out 400ms;
+  background: var(--ngx-theme-background);
+  color: var(--ngx-theme-color);
 }
 
 *,

@@ -1,10 +1,13 @@
 nav {
   height: 4rem;
   width: 100%;
-  background-color: #2b2b2b;
+  transition: all ease-in-out 400ms;
+  background-color: var(--ngx-theme-bg-navbar);
+  border-top: var(--ngx-theme-border-top-1);
+  color: rgb(232, 234, 237);
   display: flex;
   align-items: center;
-  border-top: 1px solid #5f6368;
+  box-shadow: 0 3px 5px -1px #0003, 0 6px 10px #00000024, 0 1px 18px #0000001f;
 }
 
 ul {
