@@ -31,7 +31,8 @@
             ],
             "styles": [
               "src/styles.scss",
-              "node_modules/ngx-ui-components/src/lib/assets/styles/main.scss"
+              "node_modules/ngx-ui-components/src/lib/assets/styles/main.scss",
+              "node_modules/ngx-ui-components/src/lib/assets/styles/github/github.scss"
             ],
             "scripts": []
           },
