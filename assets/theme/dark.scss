@@ -10,4 +10,6 @@
   --ngx-theme-cv-doc-tab-border-bottom-3: 3px solid #fafafa;
   --ngx-theme-color-cv-doc-tab: rgb(232, 234, 237);
   --ngx-theme-bg-dvt: rgb(43, 43, 43);
+  --ngx-theme-filter-cviewer: invert(95%) sepia(8%) saturate(67%)
+    hue-rotate(177deg) brightness(97%) contrast(96%);
 }
