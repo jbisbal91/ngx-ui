@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { ThemeService } from '../services/theme/theme.service';
 
@@ -7,11 +7,12 @@ import { ThemeService } from '../services/theme/theme.service';
   templateUrl: './navbar.component.html',
   styleUrls: ['./navbar.component.scss'],
 })
-export class NavbarComponent {
+export class NavbarComponent implements OnInit {
   theme: string = 'light';
 
-  constructor(private router: Router, private themeService: ThemeService) {
-    this.themeService.setTheme(this.theme);
+  constructor(private router: Router, private themeService: ThemeService) {}
+
+  ngOnInit(): void {
     this.theme = this.themeService.getTheme();
   }
 

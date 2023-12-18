@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { Title } from '@angular/platform-browser';
 import { NavigationEnd, Router } from '@angular/router';
 import { filter } from 'rxjs';
+import { ThemeService } from './shared/services/theme/theme.service';
 
 @Component({
   selector: 'app-root',
@@ -11,9 +12,18 @@ import { filter } from 'rxjs';
 export class AppComponent implements OnInit {
   title = 'ngx-ui';
 
-  constructor(private titleService: Title, private router: Router) {}
+  constructor(
+    private titleService: Title,
+    private router: Router,
+    private themeService: ThemeService
+  ) {}
 
   ngOnInit(): void {
+    this.setTitle();
+    this.themeService.initTheme();
+  }
+
+  setTitle() {
     this.router.events
       .pipe(filter((event) => event instanceof NavigationEnd))
       .subscribe((event: any) => {

@@ -1,15 +1,21 @@
 import { Injectable } from '@angular/core';
 
+const theme_key: string = 'theme-storage-current-name';
 @Injectable({
   providedIn: 'root',
 })
 export class ThemeService {
-
-  getTheme(): any  {
+  getTheme(): any {
     return document.documentElement.getAttribute('theme');
   }
 
-  setTheme(name:string) {
+  initTheme() {
+    const currentTheme = localStorage.getItem(theme_key);
+    this.setTheme(currentTheme ? currentTheme : 'light');
+  }
+
+  setTheme(name: string) {
     document.documentElement.setAttribute('theme', name);
+    localStorage.setItem(theme_key, name);
   }
 }
