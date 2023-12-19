@@ -19,6 +19,12 @@ li {
   cursor: pointer;
 }
 
+.selected {
+  border-bottom-style: solid;
+  border-bottom-width: 2.5px;
+  line-height: 16pt;
+}
+
 section {
   overflow: scroll;
   height: calc(100vh - 8rem);

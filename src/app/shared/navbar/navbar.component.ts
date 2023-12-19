@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Router } from '@angular/router';
+import { NavigationEnd, Router } from '@angular/router';
 import { ThemeService } from '../services/theme/theme.service';
 
 @Component({
@@ -10,7 +10,15 @@ import { ThemeService } from '../services/theme/theme.service';
 export class NavbarComponent implements OnInit {
   theme: string = 'light';
 
-  constructor(private router: Router, private themeService: ThemeService) {}
+  activatedRoute!: string;
+
+  constructor(private router: Router, private themeService: ThemeService) {
+    router.events.subscribe((val) => {
+      if (val instanceof NavigationEnd) {
+        this.activatedRoute = val.urlAfterRedirects;
+      }
+    });
+  }
 
   ngOnInit(): void {
     this.theme = this.themeService.getTheme();
@@ -23,5 +31,11 @@ export class NavbarComponent implements OnInit {
 
   navigateByUrl(path: string) {
     this.router.navigateByUrl(path);
+  }
+
+  checkActivatedRoute(route: string) {
+    return !this.activatedRoute
+      ? false
+      : this.activatedRoute.indexOf(route) >= 0;
   }
 }

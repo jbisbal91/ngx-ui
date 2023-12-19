@@ -8,20 +8,29 @@ import { DividerDocsComponent } from './components/docs/divider-docs/divider-doc
 import { AccordionDocsComponent } from './components/docs/accordion-docs/accordion-docs.component';
 import { TabDocsComponent } from './components/docs/tab-docs/tab-docs.component';
 
-
 const routes: Routes = [
   {
-    path: '',
-    component: ComponentsComponent,
+    path: 'basic',
     children: [
-      { path: 'guides', component: GuidesComponent },
-      { path: 'button', component: ButtonDocsComponent },
-      { path: 'divider', component: DividerDocsComponent },
-      { path: 'expansion', component: AccordionDocsComponent },
-      { path: 'tabs', component: TabDocsComponent },
-      { path: '**', redirectTo: 'guides', pathMatch: 'full' },
+      {
+        path: '',
+        component: ComponentsComponent,
+        children: [
+          { path: 'guides', component: GuidesComponent },
+          { path: 'button', component: ButtonDocsComponent },
+          { path: 'divider', component: DividerDocsComponent },
+          { path: 'expansion', component: AccordionDocsComponent },
+          { path: 'tabs', component: TabDocsComponent },
+          { path: '**', redirectTo: 'guides', pathMatch: 'full' },
+        ],
+      },
     ],
   },
+  {
+    path: 'advanced',
+    component: ComponentsComponent,
+  },
+  { path: '**', redirectTo: 'basic', pathMatch: 'full' },
 ];
 
 @NgModule({

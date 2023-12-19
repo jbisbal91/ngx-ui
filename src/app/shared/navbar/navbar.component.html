@@ -3,14 +3,30 @@
     <li (click)="navigateByUrl('home')">
       <img class="logo" draggable="false" src="assets/images/logo.png" />
     </li>
-    <li (click)="navigateByUrl('designs')">Designs</li>
-    <li (click)="navigateByUrl('components')">Components</li>
-    <li (click)="navigateByUrl('templates')">Templates</li>
+    <li
+      [class.selected]="checkActivatedRoute('/designs')"
+      (click)="navigateByUrl('designs')"
+    >
+      Designs
+    </li>
+    <li
+      [class.selected]="checkActivatedRoute('/components')"
+      (click)="navigateByUrl('components/basic')"
+    >
+      Components
+    </li>
+    <li
+      [class.selected]="checkActivatedRoute('/templates')"
+      (click)="navigateByUrl('templates')"
+    >
+      Templates
+    </li>
   </ul>
 
   <ul class="flex items-center list-none gap-10">
     <li class="flex items-center cursor-pointer" (click)="setTheme()">
-      <img class="theme-img"
+      <img
+        class="theme-img"
         draggable="false"
         [src]="
           theme === 'light'
