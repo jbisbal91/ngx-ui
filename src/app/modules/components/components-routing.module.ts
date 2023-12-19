@@ -7,6 +7,7 @@ import { ButtonDocsComponent } from './components/docs/button-docs/button-docs.c
 import { DividerDocsComponent } from './components/docs/divider-docs/divider-docs.component';
 import { AccordionDocsComponent } from './components/docs/accordion-docs/accordion-docs.component';
 import { TabDocsComponent } from './components/docs/tab-docs/tab-docs.component';
+import { CardDocsComponent } from './components/docs/card-docs/card-docs.component';
 
 const routes: Routes = [
   {
@@ -17,6 +18,7 @@ const routes: Routes = [
         component: ComponentsComponent,
         children: [
           { path: 'guides', component: GuidesComponent },
+          { path: 'card', component: CardDocsComponent },
           { path: 'button', component: ButtonDocsComponent },
           { path: 'divider', component: DividerDocsComponent },
           { path: 'expansion', component: AccordionDocsComponent },
