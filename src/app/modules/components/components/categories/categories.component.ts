@@ -13,13 +13,13 @@ export class CategoriesComponent {
     {
       path: '/components/basic/button',
       title: 'Button',
-      src: '/assets/images/components/Button.svg',
+      src: 'assets/images/components/Button.svg',
     },
     // { path: '/components/basic/button-toggle', title: 'Button toggle' },
     {
       path: '/components/basic/card',
       title: 'Card',
-      src: '/assets/images/components/Card.svg',
+      src: 'assets/images/components/Card.svg',
     },
     // { path: '/components/basic/checkbox', title: 'Checkbox' },
     // { path: '/components/basic/chips', title: 'Chips' },
@@ -29,12 +29,12 @@ export class CategoriesComponent {
     {
       path: '/components/basic/divider',
       title: 'Divider',
-      src: '/assets/images/components/Divider.svg',
+      src: 'assets/images/components/Divider.svg',
     },
     {
       path: '/components/basic/expansion',
       title: 'Expansion Panel',
-      src: '/assets/images/components/ExpansionPanel.svg',
+      src: 'assets/images/components/ExpansionPanel.svg',
     },
     // { path: '/components/basic/form-field', title: 'Form field' },
     // { path: '/components/basic/grid-list', title: 'Grid List' },
@@ -59,7 +59,7 @@ export class CategoriesComponent {
     {
       path: '/components/basic/tabs',
       title: 'Tabs',
-      src: '/assets/images/components/Tabs.svg',
+      src: 'assets/images/components/Tabs.svg',
     },
     // { path: '/components/basic/toolbar', title: 'Toolbar' },
     // { path: '/components/basic/tooltip', title: 'Tooltip' },
