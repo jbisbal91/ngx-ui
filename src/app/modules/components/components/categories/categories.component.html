@@ -1,0 +1,13 @@
+<div class="container">
+  <ngx-card
+    routerLink="{{ component.path }}"
+    *ngFor="let component of components"
+  >
+    <ngx-card-header class="items-center">
+      <p class="text-xl font-normal">{{ component.title }}</p>
+    </ngx-card-header>
+    <ngx-card-content class="mt-4 mb-4">
+      <img draggable="false" ngx-card-image [src]="component.src" />
+    </ngx-card-content>
+  </ngx-card>
+</div>

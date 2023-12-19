@@ -1,0 +1,20 @@
+.container {
+  padding: 2.25rem;
+}
+
+ngx-card {
+  max-width: fit-content;
+  max-height: fit-content;
+  cursor: pointer;
+  display: inline-flex;
+  margin: 0.5rem;
+}
+
+ngx-card-content {
+    height: 6rem;
+}
+
+img {
+  width: 10rem;
+  max-height: 5rem;
+}

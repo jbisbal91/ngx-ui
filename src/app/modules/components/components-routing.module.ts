@@ -2,7 +2,7 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
 import { ComponentsComponent } from './components.component';
-import { GuidesComponent } from './components/guides/guides.component';
+import { CategoriesComponent } from './components/categories/categories.component';
 import { ButtonDocsComponent } from './components/docs/button-docs/button-docs.component';
 import { DividerDocsComponent } from './components/docs/divider-docs/divider-docs.component';
 import { AccordionDocsComponent } from './components/docs/accordion-docs/accordion-docs.component';
@@ -17,13 +17,13 @@ const routes: Routes = [
         path: '',
         component: ComponentsComponent,
         children: [
-          { path: 'guides', component: GuidesComponent },
+          { path: 'categories', component: CategoriesComponent },
           { path: 'card', component: CardDocsComponent },
           { path: 'button', component: ButtonDocsComponent },
           { path: 'divider', component: DividerDocsComponent },
           { path: 'expansion', component: AccordionDocsComponent },
           { path: 'tabs', component: TabDocsComponent },
-          { path: '**', redirectTo: 'guides', pathMatch: 'full' },
+          { path: '**', redirectTo: 'categories', pathMatch: 'full' },
         ],
       },
     ],

@@ -1,10 +1,10 @@
 .c-nav {
   height: calc(100vh - 8rem);
-  width: 15.625rem; 
+  width: 15.625rem;
   background-color: var(--ngx-theme-bg-component-nav);
   color: var(--ngx-theme-color-component-nav);
   border-top: var(--ngx-theme-border-top-1);
-  overflow: scroll;  
+  overflow: scroll;
   box-shadow: var(--ngx-theme-c-nav-box-shadow);
 }
 
@@ -16,6 +16,15 @@ ul {
 li {
   height: 3rem;
   padding-left: 1rem;
+}
+
+.ct {
+  font-weight: 600;
+}
+
+.items {
+  height: 3rem;
+  padding-left: 2rem;
 }
 
 li:hover {

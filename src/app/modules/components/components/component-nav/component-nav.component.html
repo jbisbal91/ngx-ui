@@ -1,8 +1,15 @@
 <div class="c-nav">
   <ul class="list-none">
     <li
+      routerLink="components/basic/categories"
+      class="flex ct items-center"
+      [class.selected]="checkActivatedRoute('categories')"
+    >
+      Components Overview
+    </li>
+    <li
       routerLink="{{ route.path }}"
-      class="flex items-center"
+      class="flex items items-center"
       [class.selected]="checkActivatedRoute(route.path)"
       *ngFor="let route of routes"
     >

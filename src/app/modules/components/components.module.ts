@@ -10,7 +10,6 @@ import { ButtonModule, CardModule, DividerModule, ExpansionPanelModule, TabModul
 import { ComponentsComponent } from './components.component';
 import { ComponentNavComponent } from './components/component-nav/component-nav.component';
 import { ComponentViewerComponent } from './components/component-viewer/component-viewer.component';
-import { GuidesComponent } from './components/guides/guides.component';
 import { AccordionDocsComponent } from './components/docs/accordion-docs/accordion-docs.component';
 import { AccordionDemo1Component } from './components/demos/accordion/accordion-demo1/accordion-demo1.component';
 import { ButtonDocsComponent } from './components/docs/button-docs/button-docs.component';
@@ -24,6 +23,7 @@ import { TabDocsComponent } from './components/docs/tab-docs/tab-docs.component'
 import { TabDemo1Component } from './components/demos/tabs-demos/tab-demo1/tab-demo1.component';
 import { CardDocsComponent } from './components/docs/card-docs/card-docs.component';
 import { CardDemo1Component } from './components/demos/card/card-demo1/card-demo1.component';
+import { CategoriesComponent } from './components/categories/categories.component';
 
 
 export function getHighlightLanguages() {
@@ -38,7 +38,7 @@ const components = [
   ComponentsComponent,
   ComponentNavComponent,
   ComponentViewerComponent,
-  GuidesComponent,
+  CategoriesComponent,
   AccordionDocsComponent,
   AccordionDemo1Component,
   ButtonDocsComponent,
