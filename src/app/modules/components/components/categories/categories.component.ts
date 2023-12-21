@@ -17,6 +17,11 @@ export class CategoriesComponent {
     },
     // { path: '/components/basic/button-toggle', title: 'Button toggle' },
     {
+      path: '/components/basic/carousel',
+      title: 'Carousel',
+      src: 'assets/images/components/Carousel.svg',
+    },
+    {
       path: '/components/basic/card',
       title: 'Card',
       src: 'assets/images/components/Card.svg',

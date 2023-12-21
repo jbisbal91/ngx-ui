@@ -32,6 +32,7 @@ export class ComponentNavComponent {
     // { path: '/components/basic/bottom-sheet', title: 'Bottom Sheet' },
     { path: '/components/basic/button', title: 'Button' },
     // { path: '/components/basic/button-toggle', title: 'Button toggle' },
+    { path: '/components/basic/carousel', title: 'Carousel' },
     { path: '/components/basic/card', title: 'Card' },
     // { path: '/components/basic/checkbox', title: 'Checkbox' },
     // { path: '/components/basic/chips', title: 'Chips' },

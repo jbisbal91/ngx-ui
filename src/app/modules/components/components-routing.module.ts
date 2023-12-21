@@ -8,6 +8,7 @@ import { DividerDocsComponent } from './components/docs/divider-docs/divider-doc
 import { AccordionDocsComponent } from './components/docs/accordion-docs/accordion-docs.component';
 import { TabDocsComponent } from './components/docs/tab-docs/tab-docs.component';
 import { CardDocsComponent } from './components/docs/card-docs/card-docs.component';
+import { CarouselDocsComponent } from './components/docs/carousel-docs/carousel-docs.component';
 
 const routes: Routes = [
   {
@@ -18,6 +19,7 @@ const routes: Routes = [
         component: ComponentsComponent,
         children: [
           { path: 'categories', component: CategoriesComponent },
+          { path: 'carousel', component: CarouselDocsComponent },
           { path: 'card', component: CardDocsComponent },
           { path: 'button', component: ButtonDocsComponent },
           { path: 'divider', component: DividerDocsComponent },
