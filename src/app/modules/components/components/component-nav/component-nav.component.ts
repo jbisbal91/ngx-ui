@@ -28,7 +28,7 @@ export class ComponentNavComponent {
 
   routesBasicComponents = [
     // { path: '/components/basic/autocomplete', title: 'Autocomplete' },
-    // { path: '/components/basic/badge', title: 'Badge' },
+     { path: '/components/basic/badge', title: 'Badge' },
     // { path: '/components/basic/bottom-sheet', title: 'Bottom Sheet' },
     { path: '/components/basic/button', title: 'Button' },
     // { path: '/components/basic/button-toggle', title: 'Button toggle' },

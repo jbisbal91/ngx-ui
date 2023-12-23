@@ -8,7 +8,11 @@ import { Component } from '@angular/core';
 export class CategoriesComponent {
   components = [
     // { path: '/components/basic/autocomplete', title: 'Autocomplete' },
-    // { path: '/components/basic/badge', title: 'Badge' },
+    {
+      path: '/components/basic/badge',
+      title: 'Badge',
+      src: 'assets/images/components/Badge.svg',
+    },
     // { path: '/components/basic/bottom-sheet', title: 'Bottom Sheet' },
     {
       path: '/components/basic/button',
