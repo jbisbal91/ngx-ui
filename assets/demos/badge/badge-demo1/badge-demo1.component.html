@@ -1,0 +1,56 @@
+<div class="demo-section" ngxBadge="9">Text with a badge</div>
+
+<div class="demo-section" ngxBadge="99" ngxBadgeSize="medium">
+  Text with medium badge
+</div>
+
+<div class="demo-section" ngxBadge="999" ngxBadgeSize="large">
+  Text with large badge
+</div>
+
+<div class="demo-section" ngxBadge="5" ngxBadgePosition="before">
+  Text with a badge on the left
+</div>
+
+<div
+  class="demo-section"
+  ngxBadge="5"
+  ngxBadgePosition="before"
+  ngxBadgeSize="medium"
+>
+  Text with a medium badge on the left
+</div>
+
+<div
+  class="demo-section"
+  ngxBadge="5"
+  ngxBadgePosition="before"
+  ngxBadgeSize="large"
+>
+  Text with a large badge on the left
+</div>
+
+<div class="demo-section">
+  Button with a badge
+  <button ngx-button ngxType="primary" ngxBadge="6">Action</button>
+</div>
+
+<div class="demo-section">
+  Button with a badge on the left
+  <button ngx-button ngxType="primary" ngxBadgePosition="before" ngxBadge="7">
+    Action
+  </button>
+</div>
+
+<div class="demo-section">
+  Button toggles badge visibility
+  <button
+    ngx-button
+    ngxType="primary"
+    [ngxBadgeHidden]="hidden"
+    ngxBadge="8"
+    (click)="toggleBadgeVisibility()"
+  >
+    Hide
+  </button>
+</div>
