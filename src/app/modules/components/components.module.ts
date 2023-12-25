@@ -5,7 +5,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { HighlightModule, HIGHLIGHT_OPTIONS } from 'ngx-highlightjs';
 
 import { ComponentsRoutingModule } from './components-routing.module';
-import { BadgeModule, ButtonModule, CardModule, CarouselModule, DividerModule, ExpansionPanelModule, TabModule, TagModule } from 'ngx-ui-components';
+import { BadgeModule, ButtonModule, CardModule, CarouselModule, DividerModule, ExpansionPanelModule, SwitchModule, TabModule, TagModule } from 'ngx-ui-components';
 
 import { ComponentsComponent } from './components.component';
 import { ComponentNavComponent } from './components/component-nav/component-nav.component';
@@ -30,6 +30,9 @@ import { BadgeDemo1Component } from './components/demos/badge/badge-demo1/badge-
 import { BadgeDocsComponent } from './components/docs/badge-docs/badge-docs.component';
 import { TagDemo1Component } from './components/demos/tag/tag-demo1/tag-demo1.component';
 import { TagDocsComponent } from './components/docs/tag-docs/tag-docs.component';
+import { SwitchDocsComponent } from './components/docs/switch-docs/switch-docs.component';
+import { SwitchDemo1Component } from './components/demos/switch/switch-demo1/switch-demo1.component';
+import { FormsModule } from '@angular/forms';
 
 
 export function getHighlightLanguages() {
@@ -63,14 +66,17 @@ const components = [
   BadgeDocsComponent,
   BadgeDemo1Component,
   TagDocsComponent,
-  TagDemo1Component
+  TagDemo1Component,
+  SwitchDocsComponent,
+  SwitchDemo1Component,
 ];
 
 @NgModule({
-  declarations: [components, TagDemo1Component, TagDocsComponent],
+  declarations: [components],
   exports: [components],
   imports: [
     CommonModule,
+    FormsModule,
     HttpClientModule,
     HighlightModule,
     ComponentsRoutingModule,
@@ -81,7 +87,8 @@ const components = [
     CardModule,
     CarouselModule,
     BadgeModule,
-    TagModule
+    TagModule,
+    SwitchModule
   ],
   providers: [
     {

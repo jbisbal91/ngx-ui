@@ -11,6 +11,7 @@ import { CardDocsComponent } from './components/docs/card-docs/card-docs.compone
 import { CarouselDocsComponent } from './components/docs/carousel-docs/carousel-docs.component';
 import { BadgeDocsComponent } from './components/docs/badge-docs/badge-docs.component';
 import { TagDocsComponent } from './components/docs/tag-docs/tag-docs.component';
+import { SwitchDocsComponent } from './components/docs/switch-docs/switch-docs.component';
 
 const routes: Routes = [
   {
@@ -29,6 +30,7 @@ const routes: Routes = [
           { path: 'expansion', component: AccordionDocsComponent },
           { path: 'tabs', component: TabDocsComponent },
           { path: 'tags', component: TagDocsComponent },
+          { path: 'switch', component: SwitchDocsComponent },
           { path: '**', redirectTo: 'categories', pathMatch: 'full' },
         ],
       },

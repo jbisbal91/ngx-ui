@@ -72,6 +72,11 @@ export class ComponentsService {
       // { path: '/components/basic/snack-bar', title: 'Snackbar' },
       // { path: '/components/basic/sort', title: 'Sort header' },
       // { path: '/components/basic/stepper', title: 'Stepper' },
+      {
+        path: '/components/basic/switch',
+        title: 'Switch',
+        src: 'assets/images/components/Switch.svg',
+      },
       // { path: '/components/basic/table', title: 'Table' },
       {
         path: '/components/basic/tabs',
