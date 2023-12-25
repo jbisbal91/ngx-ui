@@ -5,7 +5,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { HighlightModule, HIGHLIGHT_OPTIONS } from 'ngx-highlightjs';
 
 import { ComponentsRoutingModule } from './components-routing.module';
-import { BadgeModule, ButtonModule, CardModule, CarouselModule, DividerModule, ExpansionPanelModule, TabModule } from 'ngx-ui-components';
+import { BadgeModule, ButtonModule, CardModule, CarouselModule, DividerModule, ExpansionPanelModule, TabModule, TagModule } from 'ngx-ui-components';
 
 import { ComponentsComponent } from './components.component';
 import { ComponentNavComponent } from './components/component-nav/component-nav.component';
@@ -28,6 +28,8 @@ import { CarouselDocsComponent } from './components/docs/carousel-docs/carousel-
 import { CarouselDemo1Component } from './components/demos/carousel/carousel-demo1/carousel-demo1.component';
 import { BadgeDemo1Component } from './components/demos/badge/badge-demo1/badge-demo1.component';
 import { BadgeDocsComponent } from './components/docs/badge-docs/badge-docs.component';
+import { TagDemo1Component } from './components/demos/tag/tag-demo1/tag-demo1.component';
+import { TagDocsComponent } from './components/docs/tag-docs/tag-docs.component';
 
 
 export function getHighlightLanguages() {
@@ -59,11 +61,13 @@ const components = [
   CarouselDocsComponent,
   CarouselDemo1Component,
   BadgeDocsComponent,
-  BadgeDemo1Component
+  BadgeDemo1Component,
+  TagDocsComponent,
+  TagDemo1Component
 ];
 
 @NgModule({
-  declarations: [components],
+  declarations: [components, TagDemo1Component, TagDocsComponent],
   exports: [components],
   imports: [
     CommonModule,
@@ -76,7 +80,8 @@ const components = [
     TabModule,
     CardModule,
     CarouselModule,
-    BadgeModule
+    BadgeModule,
+    TagModule
   ],
   providers: [
     {

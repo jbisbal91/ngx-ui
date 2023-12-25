@@ -1,7 +1,7 @@
 <nav class="justify-between">
   <ul class="flex items-center list-none gap-10">
     <li (click)="navigateByUrl('overview')">
-      <img class="logo" draggable="false" src="assets/images/logo.png" />
+      <img class="logo" draggable="false" src="assets/images/logo.png" alt="logo"/>
     </li>
     <!-- <li
       [class.selected]="checkActivatedRoute('/designs')"
@@ -9,7 +9,7 @@
     >
       Designs
     </li> -->
-    <li
+    <li class="li-item"
       [class.selected]="checkActivatedRoute('/components')"
       (click)="navigateByUrl('components/basic')"
     >

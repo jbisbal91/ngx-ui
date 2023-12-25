@@ -1,31 +1,38 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { Title } from '@angular/platform-browser';
 import { NavigationEnd, Router } from '@angular/router';
+import { filter } from 'rxjs';
 
 @Component({
   selector: 'app-components-root',
   templateUrl: './components.component.html',
   styleUrls: ['./components.component.scss'],
 })
-export class ComponentsComponent {
+export class ComponentsComponent implements OnInit {
+  activatedRouteName: string = '';
 
-  activatedRoute!: string;
+  constructor(private router: Router, private titleService: Title) {}
 
-  constructor(private router: Router) {
-    router.events.subscribe((val) => {
-      if (val instanceof NavigationEnd) {
-        this.activatedRoute = val.urlAfterRedirects;
-      }
-    });
+  ngOnInit(): void {
+    this.activatedRouteName = this.titleService
+      .getTitle()
+      .replace(' | NGX-UI', '');
+    this.setRouteName();
   }
 
-  navigateByUrl(path: string) {
-    this.router.navigateByUrl(path);
+  setRouteName() {
+    this.router.events
+      .pipe(filter((event) => event instanceof NavigationEnd))
+      .subscribe((event: any) => {
+        const url = event.urlAfterRedirects;
+        const urlParts = url.split('/').filter((part: any) => part !== '');
+        this.activatedRouteName = this.capitalizeFirstLetter(
+          urlParts[urlParts.length - 1]
+        );
+      });
   }
 
-  checkActivatedRoute(route: string) {
-    return !this.activatedRoute
-      ? false
-      : this.activatedRoute.indexOf(route) >= 0;
+  capitalizeFirstLetter(str: string): string {
+    return str.charAt(0).toUpperCase() + str.slice(1);
   }
-  
 }

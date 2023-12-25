@@ -1,17 +1,6 @@
 <nav>
   <ul class="flex items-center list-none gap-10">
-    <li
-      [class.selected]="checkActivatedRoute('/basic')"
-      (click)="navigateByUrl('components/basic')"
-    >
-      Basic Components
-    </li>
-    <li
-      [class.selected]="checkActivatedRoute('/advanced')"
-      (click)="navigateByUrl('components/advanced')"
-    >
-      Advanced Components
-    </li>
+    <li>{{ activatedRouteName }}</li>
   </ul>
 </nav>
 <div class="flex flex-row">

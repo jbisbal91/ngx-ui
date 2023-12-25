@@ -23,12 +23,16 @@ li {
   font-weight: 500;
   color: rgb(232, 234, 237);
   cursor: pointer;
+  &.li-item {
+    padding: 0.5rem 1rem;
+    border-radius: 0.25rem;
+  }
 }
 
 .selected {
-  border-bottom-style: solid;
-  border-bottom-width: 2.5px;
-  line-height: 16pt;
+  padding: 0.5rem 1rem;
+  border-radius: 0.25rem;
+  background-color: var(--ngx-theme-bg-navbar-selected);
 }
 
 a {

@@ -10,6 +10,7 @@ import { TabDocsComponent } from './components/docs/tab-docs/tab-docs.component'
 import { CardDocsComponent } from './components/docs/card-docs/card-docs.component';
 import { CarouselDocsComponent } from './components/docs/carousel-docs/carousel-docs.component';
 import { BadgeDocsComponent } from './components/docs/badge-docs/badge-docs.component';
+import { TagDocsComponent } from './components/docs/tag-docs/tag-docs.component';
 
 const routes: Routes = [
   {
@@ -27,6 +28,7 @@ const routes: Routes = [
           { path: 'divider', component: DividerDocsComponent },
           { path: 'expansion', component: AccordionDocsComponent },
           { path: 'tabs', component: TabDocsComponent },
+          { path: 'tags', component: TagDocsComponent },
           { path: '**', redirectTo: 'categories', pathMatch: 'full' },
         ],
       },
