@@ -41,7 +41,7 @@ stylesImport = `
     ],
     "styles": [
         "src/styles.scss",
-        "node_modules/ngx-ui-components/src/lib/assets/styles/main.scss"
+        "node_modules/ngx-ui-jbisbal/src/lib/assets/styles/main.scss"
       ]
   }
 `;

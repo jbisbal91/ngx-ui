@@ -5,7 +5,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { HighlightModule, HIGHLIGHT_OPTIONS } from 'ngx-highlightjs';
 
 import { ComponentsRoutingModule } from './components-routing.module';
-import { BadgeModule, ButtonModule, CardModule, CarouselModule, DividerModule, ExpansionPanelModule, SwitchModule, TabModule, TagModule } from 'ngx-ui-components';
+import { BadgeModule, ButtonModule, CardModule, CarouselModule, DividerModule, ExpansionPanelModule, SwitchModule, TabModule, TagModule } from 'ngx-ui-jbisbal';
 
 import { ComponentsComponent } from './components.component';
 import { ComponentNavComponent } from './components/component-nav/component-nav.component';
