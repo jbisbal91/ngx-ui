@@ -49,7 +49,7 @@ OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 ngx-highlightjs
 MIT
 
-ngx-ui-components
+ngx-ui-jbisbal
 
 rxjs
 Apache-2.0
