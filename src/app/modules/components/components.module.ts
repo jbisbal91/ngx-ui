@@ -5,7 +5,16 @@ import { HttpClientModule } from '@angular/common/http';
 import { HighlightModule, HIGHLIGHT_OPTIONS } from 'ngx-highlightjs';
 
 import { ComponentsRoutingModule } from './components-routing.module';
-import { BadgeModule, ButtonModule, CardModule, CarouselModule, DividerModule, ExpansionPanelModule, SwitchModule, TabModule, TagModule } from 'ngx-ui-jbisbal';
+
+import { BadgeModule } from 'ngx-ui-jbisbal/badge';
+import { ButtonModule } from 'ngx-ui-jbisbal/button';
+import { CardModule } from 'ngx-ui-jbisbal/card';
+import { CarouselModule } from 'ngx-ui-jbisbal/carousel';
+import { DividerModule } from 'ngx-ui-jbisbal/divider';
+import { ExpansionPanelModule } from 'ngx-ui-jbisbal/expansion-panel';
+import { SwitchModule } from 'ngx-ui-jbisbal/switch';
+import { TabModule } from 'ngx-ui-jbisbal/tab';
+import { TagModule } from 'ngx-ui-jbisbal/tag';
 
 import { ComponentsComponent } from './components.component';
 import { ComponentNavComponent } from './components/component-nav/component-nav.component';
@@ -33,7 +42,6 @@ import { TagDocsComponent } from './components/docs/tag-docs/tag-docs.component'
 import { SwitchDocsComponent } from './components/docs/switch-docs/switch-docs.component';
 import { SwitchDemo1Component } from './components/demos/switch/switch-demo1/switch-demo1.component';
 import { FormsModule } from '@angular/forms';
-
 
 export function getHighlightLanguages() {
   return {
@@ -88,7 +96,7 @@ const components = [
     CarouselModule,
     BadgeModule,
     TagModule,
-    SwitchModule
+    SwitchModule,
   ],
   providers: [
     {
