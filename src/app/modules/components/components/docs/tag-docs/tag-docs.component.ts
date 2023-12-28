@@ -8,6 +8,7 @@ import { HttpClient } from '@angular/common/http';
   styleUrls: ['./tag-docs.component.scss'],
 })
 export class TagDocsComponent implements OnInit {
+  moduleImport = "import { TagModule } from 'ngx-ui-jbisbal/tag';";
   variation1DemoTags!: Tabs[];
 
   constructor(private http: HttpClient) {}

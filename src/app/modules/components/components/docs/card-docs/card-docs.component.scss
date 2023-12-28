@@ -1,9 +1,12 @@
 article {
-    padding: 2.25rem;
-  }
-  
-  a {
-    text-decoration: unset;
-    color: var(--ngx-theme-color);
-  }
-    
+  padding: 2.25rem;
+}
+
+a {
+  text-decoration: unset;
+  color: var(--ngx-theme-color);
+}
+
+pre {
+  margin-bottom: 1rem;
+}

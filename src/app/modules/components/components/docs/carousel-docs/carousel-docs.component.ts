@@ -8,6 +8,7 @@ import { HttpClient } from '@angular/common/http';
   styleUrls: ['./carousel-docs.component.scss'],
 })
 export class CarouselDocsComponent implements OnInit {
+  moduleImport = "import { CarouselModule } from 'ngx-ui-jbisbal/carousel';";
   variation1DemoCarousel!: Tabs[];
 
   constructor(private http: HttpClient) {}

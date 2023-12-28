@@ -8,6 +8,7 @@ import { HttpClient } from '@angular/common/http';
   styleUrls: ['./accordion-docs.component.scss'],
 })
 export class AccordionDocsComponent implements OnInit {
+  moduleImport = "import { ExpansionPanelModule } from 'ngx-ui-jbisbal/expansion-panel';";
   variation1DemoAccordion!: Tabs[];
 
   constructor(private http: HttpClient) {}

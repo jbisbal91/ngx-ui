@@ -1,26 +1,26 @@
 <article class="main-article-template">
-    <!---------BREADCRUMBS---------->
-    <div class="mb-4">
-      <a class="font-extrabold" routerLink="/components">Components</a>
-      <a routerLink="/components/basic/switch"> / Switch</a>
+  <!---------BREADCRUMBS---------->
+  <div class="mb-4">
+    <a class="font-extrabold" routerLink="/components">Components</a>
+    <a routerLink="/components/basic/switch"> / Switch</a>
+  </div>
+
+  <!---------OVERVIEW---------->
+  <h1 class="mb-4">Switch Overview</h1>
+  <!---------MODULE IMPORT---------->
+  <pre><code [highlight]="moduleImport"></code></pre>
+  <!---------BASIC USAGE---------->
+  <h1 class="mb-4">Basic Usage</h1>
+
+  <!---------DEMO VIEWER---------->
+  <!---------Basic demo----------->
+  <app-component-viewer [tabs]="variation1DemoSwitch">
+    <div demo-viewer-example>
+      <app-switch-demo1></app-switch-demo1>
     </div>
-  
-    <!---------OVERVIEW---------->
-    <h1 class="mb-4">Switch Overview</h1>
-  
-    <!---------BASIC USAGE---------->
-    <h1 class="mb-4">Basic Usage</h1>
-  
-    <!---------DEMO VIEWER---------->
-    <!---------Basic demo----------->
-    <app-component-viewer [tabs]="variation1DemoSwitch">
-      <div demo-viewer-example>
-        <app-switch-demo1></app-switch-demo1>
-      </div>
-      <div demo-viewer-title>Variation 1</div>
-      <div demo-viewer-description>
-        <p>Variation 1.</p>
-      </div>
-    </app-component-viewer>
-  </article>
-  
+    <div demo-viewer-title>Variation 1</div>
+    <div demo-viewer-description>
+      <p>Variation 1.</p>
+    </div>
+  </app-component-viewer>
+</article>

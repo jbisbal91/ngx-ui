@@ -8,6 +8,7 @@ import { HttpClient } from '@angular/common/http';
   styleUrls: ['./switch-docs.component.scss'],
 })
 export class SwitchDocsComponent implements OnInit {
+  moduleImport = "import { SwitchModule } from 'ngx-ui-jbisbal/switch';";
   variation1DemoSwitch!: Tabs[];
 
   constructor(private http: HttpClient) {}

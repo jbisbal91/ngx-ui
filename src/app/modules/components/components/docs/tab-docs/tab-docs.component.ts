@@ -8,6 +8,7 @@ import { HttpClient } from '@angular/common/http';
   styleUrls: ['./tab-docs.component.scss'],
 })
 export class TabDocsComponent implements OnInit {
+  moduleImport = "import { TabModule } from 'ngx-ui-jbisbal/tab';";
   variation1DemoTabs!: Tabs[];
 
   constructor(private http: HttpClient) {}

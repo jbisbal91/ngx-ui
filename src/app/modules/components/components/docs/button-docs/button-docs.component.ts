@@ -8,6 +8,7 @@ import { Tabs } from '../../interfaces/tabs.interface';
   styleUrls: ['./button-docs.component.scss'],
 })
 export class ButtonDocsComponent implements OnInit {
+  moduleImport = "import { ButtonModule } from 'ngx-ui-jbisbal/button';";
   variation1DemoTabs!: Tabs[];
   variation2DemoTabs!: Tabs[];
   variation3DemoTabs!: Tabs[];

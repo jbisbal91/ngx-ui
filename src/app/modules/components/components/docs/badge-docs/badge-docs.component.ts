@@ -8,6 +8,7 @@ import { HttpClient } from '@angular/common/http';
   styleUrls: ['./badge-docs.component.scss'],
 })
 export class BadgeDocsComponent implements OnInit {
+  moduleImport = "import { BadgeModule } from 'ngx-ui-jbisbal/badge';";
   variation1DemoBadge!: Tabs[];
 
   constructor(private http: HttpClient) {}

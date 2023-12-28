@@ -13,7 +13,7 @@ export class HomePageComponent {
   import { AppRoutingModule } from './app-routing.module';
   import { AppComponent } from './app.component';
 
-  import {TabModule} from 'ngx-ui-components';
+  import { TabModule } from 'ngx-ui-jbisbal/tab';
 
 
   @NgModule({
@@ -41,7 +41,7 @@ stylesImport = `
     ],
     "styles": [
         "src/styles.scss",
-        "node_modules/ngx-ui-jbisbal/src/lib/assets/styles/main.scss"
+        "node_modules/ngx-ui-jbisbal/ngx-ui-components.min.scss"
       ]
   }
 `;

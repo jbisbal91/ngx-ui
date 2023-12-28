@@ -5,9 +5,10 @@ import { HttpClient } from '@angular/common/http';
 @Component({
   selector: 'app-card-docs',
   templateUrl: './card-docs.component.html',
-  styleUrls: ['./card-docs.component.scss']
+  styleUrls: ['./card-docs.component.scss'],
 })
 export class CardDocsComponent implements OnInit {
+  moduleImport = "import { CardModule } from 'ngx-ui-jbisbal/card';";
   variation1DemoCard!: Tabs[];
 
   constructor(private http: HttpClient) {}
@@ -44,4 +45,3 @@ export class CardDocsComponent implements OnInit {
     ];
   }
 }
-

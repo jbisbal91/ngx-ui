@@ -8,6 +8,7 @@ import { Tabs } from '../../interfaces/tabs.interface';
   styleUrls: ['./divider-docs.component.scss'],
 })
 export class DividerDocsComponent implements OnInit {
+  moduleImport = "import { DividerModule } from 'ngx-ui-jbisbal/divider';";
   variation1DemoDivider!: Tabs[];
 
   constructor(private http: HttpClient) {}

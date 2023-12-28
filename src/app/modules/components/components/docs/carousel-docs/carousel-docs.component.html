@@ -1,26 +1,27 @@
 <article class="main-article-template">
-    <!---------BREADCRUMBS---------->
-  
-    <div class="mb-4">
-      <a class="font-extrabold" routerLink="/components">Components</a>
-      <a routerLink="/components/basic/carousel"> / Carousel</a>
+  <!---------BREADCRUMBS---------->
+
+  <div class="mb-4">
+    <a class="font-extrabold" routerLink="/components">Components</a>
+    <a routerLink="/components/basic/carousel"> / Carousel</a>
+  </div>
+
+  <!---------OVERVIEW---------->
+  <h1 class="mb-4">Carousel Overview</h1>
+  <!---------MODULE IMPORT---------->
+  <pre><code [highlight]="moduleImport"></code></pre>
+  <!---------BASIC USAGE---------->
+  <h1 class="mb-4">Basic Usage</h1>
+
+  <!---------DEMO VIEWER---------->
+  <!---------Basic demo----------->
+  <app-component-viewer [tabs]="variation1DemoCarousel">
+    <div demo-viewer-example>
+      <app-carousel-demo1></app-carousel-demo1>
     </div>
-  
-    <!---------OVERVIEW---------->
-    <h1 class="mb-4">Carousel Overview</h1>
-  
-    <!---------BASIC USAGE---------->
-    <h1 class="mb-4">Basic Usage</h1>
-  
-    <!---------DEMO VIEWER---------->
-    <!---------Basic demo----------->
-    <app-component-viewer [tabs]="variation1DemoCarousel">
-        <div demo-viewer-example>
-          <app-carousel-demo1></app-carousel-demo1>
-        </div>
-        <div demo-viewer-title>Variation 1</div>
-        <div demo-viewer-description>
-          <p>Variation 1.</p>
-        </div>
-      </app-component-viewer>
-  </article>
+    <div demo-viewer-title>Variation 1</div>
+    <div demo-viewer-description>
+      <p>Variation 1.</p>
+    </div>
+  </app-component-viewer>
+</article>
