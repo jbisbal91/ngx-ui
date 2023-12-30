@@ -50,6 +50,7 @@ ngx-highlightjs
 MIT
 
 ngx-ui-jbisbal
+MIT
 
 rxjs
 Apache-2.0
