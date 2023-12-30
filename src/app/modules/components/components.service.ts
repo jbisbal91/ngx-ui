@@ -54,7 +54,11 @@ export class ComponentsService {
         src: 'assets/images/components/ExpansionPanel.svg',
       },
       // { path: '/components/basic/form-field', title: 'Form field' },
-      // { path: '/components/basic/grid-list', title: 'Grid List' },
+      {
+        path: '/components/basic/grid',
+        title: 'Grid',
+        src: 'assets/images/components/Grid.svg',
+      },
       // { path: '/components/basic/icon', title: 'Icon' },
       // { path: '/components/basic/input', title: 'Input' },
       // { path: '/components/basic/list', title: 'List' },

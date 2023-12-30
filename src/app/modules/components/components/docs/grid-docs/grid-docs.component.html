@@ -1,0 +1,83 @@
+<article class="main-article-template">
+  <!---------BREADCRUMBS---------->
+  <div class="mb-4">
+    <a class="font-extrabold" routerLink="/components">Components</a>
+    <a routerLink="/components/basic/grid"> / Grid</a>
+  </div>
+
+  <!---------OVERVIEW---------->
+  <h1 class="mb-4">Design concept</h1>
+
+  <div ngx-row ngxGutter="[4,0]">
+    <div class="col" ngx-col>{{ (24 / 24) * 100 }}%</div>
+  </div>
+
+  <div ngx-row ngxGutter="[4,0]">
+    <div class="col" ngx-col ngxSpan="6">{{ (6 / 24) * 100 }}%</div>
+    <div class="col" ngx-col ngxSpan="6">{{ (6 / 24) * 100 }}%</div>
+    <div class="col" ngx-col ngxSpan="6">{{ (6 / 24) * 100 }}%</div>
+    <div class="col" ngx-col ngxSpan="6">{{ (6 / 24) * 100 }}%</div>
+  </div>
+
+  <div ngx-row ngxGutter="[4,0]">
+    <div class="col" ngx-col ngxSpan="8">{{ (8 / 24) * 100 }}%</div>
+    <div class="col" ngx-col ngxSpan="8">{{ (8 / 24) * 100 }}%</div>
+    <div class="col" ngx-col ngxSpan="8">{{ (8 / 24) * 100 }}%</div>
+  </div>
+
+  <div ngx-row ngxGutter="[4,0]">
+    <div class="col" ngx-col ngxSpan="12">{{ (12 / 24) * 100 }}%</div>
+    <div class="col" ngx-col ngxSpan="12">{{ (12 / 24) * 100 }}%</div>
+  </div>
+
+  <div ngx-row ngxGutter="[4,0]">
+    <div class="col" ngx-col ngxSpan="16">{{ (16 / 24) * 100 }}%</div>
+    <div class="col" ngx-col ngxSpan="8">{{ (8 / 24) * 100 }}%</div>
+  </div>
+  <!---------MODULE IMPORT---------->
+  <pre><code [highlight]="moduleImport"></code></pre>
+  <!---------BASIC USAGE---------->
+  <h1 class="mb-4">Basic Usage</h1>
+
+  <!---------DEMO VIEWER---------->
+  <!---------Basic demo----------->
+  <app-component-viewer [tabs]="variation1DemoGrid">
+    <div demo-viewer-example>
+      <app-grid-demo1></app-grid-demo1>
+    </div>
+    <div demo-viewer-title>Variation 1</div>
+    <div demo-viewer-description>
+      <p>Variation 1.</p>
+    </div>
+  </app-component-viewer>
+
+  <app-component-viewer [tabs]="variation2DemoGrid">
+    <div demo-viewer-example>
+      <app-grid-demo2></app-grid-demo2>
+    </div>
+    <div demo-viewer-title>Variation 2</div>
+    <div demo-viewer-description>
+      <p>Variation 2.</p>
+    </div>
+  </app-component-viewer>
+
+  <app-component-viewer [tabs]="variation3DemoGrid">
+    <div demo-viewer-example>
+      <app-grid-demo3></app-grid-demo3>
+    </div>
+    <div demo-viewer-title>Variation 3</div>
+    <div demo-viewer-description>
+      <p>Variation 3.</p>
+    </div>
+  </app-component-viewer>
+
+  <app-component-viewer [tabs]="variation4DemoGrid">
+    <div demo-viewer-example>
+      <app-grid-demo4></app-grid-demo4>
+    </div>
+    <div demo-viewer-title>Variation 4</div>
+    <div demo-viewer-description>
+      <p>Variation 4.</p>
+    </div>
+  </app-component-viewer>
+</article>

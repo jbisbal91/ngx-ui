@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { HttpClientModule } from '@angular/common/http';
+import { FormsModule } from '@angular/forms';
 
 import { HighlightModule, HIGHLIGHT_OPTIONS } from 'ngx-highlightjs';
 
@@ -15,6 +16,7 @@ import { ExpansionPanelModule } from 'ngx-ui-jbisbal/expansion-panel';
 import { SwitchModule } from 'ngx-ui-jbisbal/switch';
 import { TabModule } from 'ngx-ui-jbisbal/tab';
 import { TagModule } from 'ngx-ui-jbisbal/tag';
+import { GridModule } from 'ngx-ui-jbisbal/grid';
 
 import { ComponentsComponent } from './components.component';
 import { ComponentNavComponent } from './components/component-nav/component-nav.component';
@@ -41,7 +43,12 @@ import { TagDemo1Component } from './components/demos/tag/tag-demo1/tag-demo1.co
 import { TagDocsComponent } from './components/docs/tag-docs/tag-docs.component';
 import { SwitchDocsComponent } from './components/docs/switch-docs/switch-docs.component';
 import { SwitchDemo1Component } from './components/demos/switch/switch-demo1/switch-demo1.component';
-import { FormsModule } from '@angular/forms';
+
+import { GridDocsComponent } from './components/docs/grid-docs/grid-docs.component';
+import { GridDemo1Component } from './components/demos/grid/grid-demo1/grid-demo1.component';
+import { GridDemo2Component } from './components/demos/grid/grid-demo2/grid-demo2.component';
+import { GridDemo3Component } from './components/demos/grid/grid-demo3/grid-demo3.component';
+import { GridDemo4Component } from './components/demos/grid/grid-demo4/grid-demo4.component';
 
 export function getHighlightLanguages() {
   return {
@@ -77,6 +84,11 @@ const components = [
   TagDemo1Component,
   SwitchDocsComponent,
   SwitchDemo1Component,
+  GridDocsComponent,
+  GridDemo1Component,
+  GridDemo2Component,
+  GridDemo3Component,
+  GridDemo4Component,
 ];
 
 @NgModule({
@@ -91,6 +103,7 @@ const components = [
     ButtonModule,
     ExpansionPanelModule,
     DividerModule,
+    GridModule,
     TabModule,
     CardModule,
     CarouselModule,
