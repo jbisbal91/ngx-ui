@@ -31,7 +31,9 @@ import { ButtonDemo4Component } from './components/demos/button/button-demo4/but
 import { DividerDocsComponent } from './components/docs/divider-docs/divider-docs.component';
 import { DividerDemo1Component } from './components/demos/divider/divider-demo1/divider-demo1.component';
 import { TabDocsComponent } from './components/docs/tab-docs/tab-docs.component';
-import { TabDemo1Component } from './components/demos/tabs-demos/tab-demo1/tab-demo1.component';
+import { TabDemo1Component } from './components/demos/tabs/tab-demo1/tab-demo1.component';
+import { TabDemo2Component } from './components/demos/tabs/tab-demo2/tab-demo2.component';
+import { TabDemo3Component } from './components/demos/tabs/tab-demo3/tab-demo3.component';
 import { CardDocsComponent } from './components/docs/card-docs/card-docs.component';
 import { CardDemo1Component } from './components/demos/card/card-demo1/card-demo1.component';
 import { CategoriesComponent } from './components/categories/categories.component';
@@ -43,12 +45,12 @@ import { TagDemo1Component } from './components/demos/tag/tag-demo1/tag-demo1.co
 import { TagDocsComponent } from './components/docs/tag-docs/tag-docs.component';
 import { SwitchDocsComponent } from './components/docs/switch-docs/switch-docs.component';
 import { SwitchDemo1Component } from './components/demos/switch/switch-demo1/switch-demo1.component';
-
 import { GridDocsComponent } from './components/docs/grid-docs/grid-docs.component';
 import { GridDemo1Component } from './components/demos/grid/grid-demo1/grid-demo1.component';
 import { GridDemo2Component } from './components/demos/grid/grid-demo2/grid-demo2.component';
 import { GridDemo3Component } from './components/demos/grid/grid-demo3/grid-demo3.component';
 import { GridDemo4Component } from './components/demos/grid/grid-demo4/grid-demo4.component';
+
 
 export function getHighlightLanguages() {
   return {
@@ -74,6 +76,8 @@ const components = [
   DividerDemo1Component,
   TabDocsComponent,
   TabDemo1Component,
+  TabDemo2Component,
+  TabDemo3Component,
   CardDocsComponent,
   CardDemo1Component,
   CarouselDocsComponent,
