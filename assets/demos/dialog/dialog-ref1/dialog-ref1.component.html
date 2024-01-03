@@ -1,31 +1,26 @@
-<ngx-card class="example-card">
-    <ngx-card-header class="items-center">
-      <img
-        ngx-card-avatar
-        src="https://material.angular.io/assets/img/examples/shiba1.jpg"
-      />
-      <div class="pl-4">
-        <p class="text-xl font-bold">Shiba Inu</p>
-        <p class="text-sm font-medium">Dog Breed</p>
-      </div>
-    </ngx-card-header>
-    <img
-      class="mt-4 mb-4"
-      ngx-card-image
-      src="https://material.angular.io/assets/img/examples/shiba2.jpg"
-      alt="Photo of a Shiba Inu"
-    />
-    <ngx-card-content>
-      <p class="text-sm font-medium">
-        The Shiba Inu is the smallest of the six original and distinct spitz
-        breeds of dog from Japan. A small, agile dog that copes very well with
-        mountainous terrain, the Shiba Inu was originally bred for hunting.
-      </p>
-    </ngx-card-content>
-  
-    <ngx-card-actions>
-      <button ngx-button ngxType="text">LIKE</button>
-      <button ngx-button ngxType="text">SHARE</button>
-    </ngx-card-actions>
-  </ngx-card>
-  
+<h1>40 Grids System.</h1>
+<div ngx-row ngxSpan="40">
+  <div class="col" ngx-col ngxSpan="20">col-20</div>
+  <div class="col" ngx-col ngxSpan="20">col-20</div>
+</div>
+
+<div ngx-row ngxGutter="[8,0]" ngxSpan="40">
+  <div class="col" ngx-col ngxSpan="10">col-10</div>
+  <div class="col" ngx-col ngxSpan="10">col-10</div>
+  <div class="col" ngx-col ngxSpan="10">col-10</div>
+  <div class="col" ngx-col ngxSpan="10">col-10</div>
+</div>
+
+<div ngx-row ngxGutter="[8,0]" ngxSpan="40">
+  <div class="col" ngx-col ngxSpan="5">col-5</div>
+  <div class="col" ngx-col ngxSpan="5">col-5</div>
+  <div class="col" ngx-col ngxSpan="5">col-5</div>
+  <div class="col" ngx-col ngxSpan="5">col-5</div>
+  <div class="col" ngx-col ngxSpan="5">col-5</div>
+  <div class="col" ngx-col ngxSpan="5">col-5</div>
+  <div class="col" ngx-col ngxSpan="5">col-5</div>
+  <div class="col" ngx-col ngxSpan="5">col-5</div>
+</div>
+
+
+<button ngx-button ngxType="default" (click)="closeDialog()">Close</button>

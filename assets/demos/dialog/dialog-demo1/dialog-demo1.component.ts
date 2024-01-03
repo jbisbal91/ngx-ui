@@ -13,7 +13,7 @@ export class DialogDemo1Component {
     this.ngxDialog.open(
       DialogRef1Component,
       { data: 'str' },
-      { width: '20rem', height: '20rem' }
+      { width: '30rem' }
     );
   }
 }
