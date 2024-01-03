@@ -13,6 +13,7 @@ import { CarouselDocsComponent } from './components/docs/carousel-docs/carousel-
 import { BadgeDocsComponent } from './components/docs/badge-docs/badge-docs.component';
 import { TagDocsComponent } from './components/docs/tag-docs/tag-docs.component';
 import { SwitchDocsComponent } from './components/docs/switch-docs/switch-docs.component';
+import { DialogDocsComponent } from './components/docs/dialog-docs/dialog-docs.component';
 
 const routes: Routes = [
   {
@@ -26,6 +27,7 @@ const routes: Routes = [
           { path: 'badge', component: BadgeDocsComponent },
           { path: 'carousel', component: CarouselDocsComponent },
           { path: 'card', component: CardDocsComponent },
+          { path: 'dialog', component: DialogDocsComponent },
           { path: 'button', component: ButtonDocsComponent },
           { path: 'divider', component: DividerDocsComponent },
           { path: 'expansion', component: AccordionDocsComponent },

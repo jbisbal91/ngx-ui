@@ -50,6 +50,9 @@ import { GridDemo1Component } from './components/demos/grid/grid-demo1/grid-demo
 import { GridDemo2Component } from './components/demos/grid/grid-demo2/grid-demo2.component';
 import { GridDemo3Component } from './components/demos/grid/grid-demo3/grid-demo3.component';
 import { GridDemo4Component } from './components/demos/grid/grid-demo4/grid-demo4.component';
+import { DialogDemo1Component } from './components/demos/dialog/dialog-demo1/dialog-demo1.component';
+import { DialogRef1Component } from './components/demos/dialog/dialog-ref1/dialog-ref1.component';
+import { DialogDocsComponent } from './components/docs/dialog-docs/dialog-docs.component';
 
 
 export function getHighlightLanguages() {
@@ -82,6 +85,9 @@ const components = [
   CardDemo1Component,
   CarouselDocsComponent,
   CarouselDemo1Component,
+  DialogDocsComponent,
+  DialogDemo1Component,
+  DialogRef1Component,
   BadgeDocsComponent,
   BadgeDemo1Component,
   TagDocsComponent,

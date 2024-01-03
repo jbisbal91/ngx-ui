@@ -42,7 +42,11 @@ export class ComponentsService {
       // { path: '/components/basic/chips', title: 'Chips' },
       // { path: '/components/basic/core', title: 'Core' },
       // { path: '/components/basic/datepicker', title: 'Datepicker' },
-      // { path: '/components/basic/dialog', title: 'Dialog' },
+      {
+        path: '/components/basic/dialog',
+        title: 'Dialog',
+        src: 'assets/images/components/Dialog.svg',
+      },
       {
         path: '/components/basic/divider',
         title: 'Divider',
