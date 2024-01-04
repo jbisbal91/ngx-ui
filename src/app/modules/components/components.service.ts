@@ -96,6 +96,11 @@ export class ComponentsService {
         title: 'Tags',
         src: 'assets/images/components/Tags.svg',
       },
+      {
+        path: '/components/basic/timelines',
+        title: 'Timelines',
+        src: 'assets/images/components/Timeline.svg',
+      },
       // { path: '/components/basic/toolbar', title: 'Toolbar' },
       // { path: '/components/basic/tooltip', title: 'Tooltip' },
       // { path: '/components/basic/tree', title: 'tree' },

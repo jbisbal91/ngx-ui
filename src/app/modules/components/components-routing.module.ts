@@ -14,6 +14,7 @@ import { BadgeDocsComponent } from './components/docs/badge-docs/badge-docs.comp
 import { TagDocsComponent } from './components/docs/tag-docs/tag-docs.component';
 import { SwitchDocsComponent } from './components/docs/switch-docs/switch-docs.component';
 import { DialogDocsComponent } from './components/docs/dialog-docs/dialog-docs.component';
+import { TimelineDocsComponent } from './components/docs/timeline-docs/timeline-docs.component';
 
 const routes: Routes = [
   {
@@ -34,6 +35,7 @@ const routes: Routes = [
           { path: 'grid', component: GridDocsComponent },
           { path: 'tabs', component: TabDocsComponent },
           { path: 'tags', component: TagDocsComponent },
+          { path: 'timelines', component: TimelineDocsComponent },
           { path: 'switch', component: SwitchDocsComponent },
           { path: '**', redirectTo: 'categories', pathMatch: 'full' },
         ],

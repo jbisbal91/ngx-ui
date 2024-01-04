@@ -13,10 +13,11 @@ import { CardModule } from 'ngx-ui-jbisbal/card';
 import { CarouselModule } from 'ngx-ui-jbisbal/carousel';
 import { DividerModule } from 'ngx-ui-jbisbal/divider';
 import { ExpansionPanelModule } from 'ngx-ui-jbisbal/expansion-panel';
+import { GridModule } from 'ngx-ui-jbisbal/grid';
 import { SwitchModule } from 'ngx-ui-jbisbal/switch';
 import { TabModule } from 'ngx-ui-jbisbal/tab';
 import { TagModule } from 'ngx-ui-jbisbal/tag';
-import { GridModule } from 'ngx-ui-jbisbal/grid';
+import { TimelineModule } from 'ngx-ui-jbisbal/timeline';
 
 import { ComponentsComponent } from './components.component';
 import { ComponentNavComponent } from './components/component-nav/component-nav.component';
@@ -53,7 +54,8 @@ import { GridDemo4Component } from './components/demos/grid/grid-demo4/grid-demo
 import { DialogDemo1Component } from './components/demos/dialog/dialog-demo1/dialog-demo1.component';
 import { DialogRef1Component } from './components/demos/dialog/dialog-ref1/dialog-ref1.component';
 import { DialogDocsComponent } from './components/docs/dialog-docs/dialog-docs.component';
-
+import { TimelineDocsComponent } from './components/docs/timeline-docs/timeline-docs.component';
+import { TimelineDemo1Component } from './components/demos/timeline/timeline-demo1/timeline-demo1.component';
 
 export function getHighlightLanguages() {
   return {
@@ -99,6 +101,8 @@ const components = [
   GridDemo2Component,
   GridDemo3Component,
   GridDemo4Component,
+  TimelineDocsComponent,
+  TimelineDemo1Component,
 ];
 
 @NgModule({
@@ -110,16 +114,17 @@ const components = [
     HttpClientModule,
     HighlightModule,
     ComponentsRoutingModule,
-    ButtonModule,
-    ExpansionPanelModule,
-    DividerModule,
-    GridModule,
-    TabModule,
-    CardModule,
-    CarouselModule,
     BadgeModule,
-    TagModule,
+    ButtonModule,
+    CardModule,
+    DividerModule,
+    ExpansionPanelModule,
+    GridModule,
     SwitchModule,
+    TabModule,
+    TimelineModule,
+    CarouselModule,
+    TagModule,
   ],
   providers: [
     {
