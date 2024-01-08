@@ -81,6 +81,11 @@ export class ComponentsService {
       // { path: '/components/basic/sort', title: 'Sort header' },
       // { path: '/components/basic/stepper', title: 'Stepper' },
       {
+        path: '/components/basic/pie-chart',
+        title: 'Pie Chart',
+        src: 'assets/images/components/PieChart.svg',
+      },
+      {
         path: '/components/basic/switch',
         title: 'Switch',
         src: 'assets/images/components/Switch.svg',

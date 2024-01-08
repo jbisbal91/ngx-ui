@@ -15,6 +15,7 @@ import { TagDocsComponent } from './components/docs/tag-docs/tag-docs.component'
 import { SwitchDocsComponent } from './components/docs/switch-docs/switch-docs.component';
 import { DialogDocsComponent } from './components/docs/dialog-docs/dialog-docs.component';
 import { TimelineDocsComponent } from './components/docs/timeline-docs/timeline-docs.component';
+import { PieChartDocsComponent } from './components/docs/pie-chart-docs/pie-chart-docs.component';
 
 const routes: Routes = [
   {
@@ -37,6 +38,7 @@ const routes: Routes = [
           { path: 'tags', component: TagDocsComponent },
           { path: 'timelines', component: TimelineDocsComponent },
           { path: 'switch', component: SwitchDocsComponent },
+          { path: 'pie-chart', component: PieChartDocsComponent },
           { path: '**', redirectTo: 'categories', pathMatch: 'full' },
         ],
       },

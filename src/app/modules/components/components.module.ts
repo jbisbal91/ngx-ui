@@ -18,6 +18,7 @@ import { SwitchModule } from 'ngx-ui-jbisbal/switch';
 import { TabModule } from 'ngx-ui-jbisbal/tab';
 import { TagModule } from 'ngx-ui-jbisbal/tag';
 import { TimelineModule } from 'ngx-ui-jbisbal/timeline';
+import { PieChartModule } from 'ngx-ui-jbisbal/pie-chart';
 
 import { ComponentsComponent } from './components.component';
 import { ComponentNavComponent } from './components/component-nav/component-nav.component';
@@ -56,6 +57,8 @@ import { DialogRef1Component } from './components/demos/dialog/dialog-ref1/dialo
 import { DialogDocsComponent } from './components/docs/dialog-docs/dialog-docs.component';
 import { TimelineDocsComponent } from './components/docs/timeline-docs/timeline-docs.component';
 import { TimelineDemo1Component } from './components/demos/timeline/timeline-demo1/timeline-demo1.component';
+import { PieChartDemo1Component } from './components/demos/pie-chart/pie-chart-demo1/pie-chart-demo1.component';
+import { PieChartDocsComponent } from './components/docs/pie-chart-docs/pie-chart-docs.component';
 
 export function getHighlightLanguages() {
   return {
@@ -103,6 +106,8 @@ const components = [
   GridDemo4Component,
   TimelineDocsComponent,
   TimelineDemo1Component,
+  PieChartDocsComponent,
+  PieChartDemo1Component,
 ];
 
 @NgModule({
@@ -125,6 +130,7 @@ const components = [
     TimelineModule,
     CarouselModule,
     TagModule,
+    PieChartModule,
   ],
   providers: [
     {
